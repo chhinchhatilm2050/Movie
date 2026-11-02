@@ -1,0 +1,19 @@
+.navbar-link a {
+  font-family: Khmer OS Siemreap;
+}
+h1 {
+  font-family: Khmer OS Siemreap;
+}
+span {
+  font-family: Khmer OS Siemreap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  color: red;
+}
+.contact-me .information {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
