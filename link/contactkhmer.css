@@ -4,16 +4,93 @@
 h1 {
   font-family: Khmer OS Siemreap;
 }
-span {
-  font-family: Khmer OS Siemreap;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 10px;
-  color: red;
+.contact-me span{
+    color: white;
 }
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 500px;
+    box-shadow: 0px 0px 10px 1px rgb(50, 11, 11);
+    justify-self: center;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    gap: 40px;
+    background-color:rgb(50, 11, 11);
+    border-radius: 20px;
+    
+}
+.contact-me:hover {
+    background-color: rgba(23, 21, 21, 0.916);
+}
+
+
 .contact-me .information {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: center;
+    row-gap: 60px;
+    text-shadow: 2px 3px  rgb(163, 34, 34);
+    transition: 0.5s ease;
+}
+.a,
+.b,
+.c,
+.d,
+.e {
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icon .a:hover,
+.icon .b:hover,
+.icon .c:hover,
+.icon .d:hover,
+.icon .e:hover{
+    transform: translateY(-10px);
+    color: gray;
+}
+.text {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 73px;
+}
+.text span {
+  font-family: Khmer OS Siemreap;
+}
+.contact-me img {
+    opacity: 10%;
+    transition: 1s ease;
+}
+.contact-me img:hover {
+    opacity: 70%;
+}
+.contact-me a {
+    text-decoration: none;
+}
+.text .A:hover,
+.text .B:hover,
+.text .C:hover,
+.text .D:hover,
+.text .E:hover {
+    transform: translate(20px);
+    color: gray;
+}
+.text .A,
+.text .B,
+.text .C,
+.text .D,
+.text .E {
+    transition: 0.5s ease;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
