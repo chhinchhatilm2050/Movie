@@ -84,3 +84,71 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+.contact-me {
+    width: min(1000px, calc(100% - 32px));
+    height: auto;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-me > div:first-child {
+    flex: 0 1 50%;
+    min-width: 0;
+}
+
+.contact-me .information {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-me > div:first-child img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 700px) {
+    .contact-me {
+        flex-direction: column;
+        width: calc(100% - 24px);
+        min-height: 0;
+        gap: 16px;
+        margin-top: 30px;
+        margin-bottom: 56px;
+        padding: 12px;
+    }
+
+    .contact-me > div:first-child img {
+        width: 100% !important;
+        height: auto;
+        padding: 0 !important;
+    }
+
+    .contact-me .information {
+        justify-content: center;
+        gap: 18px;
+        padding: 8px;
+    }
+
+    .contact-me .icon {
+        font-size: 28px;
+        row-gap: 24px;
+    }
+
+    .contact-me .text {
+        min-width: 0;
+        row-gap: 30px;
+    }
+
+    .contact-me .text .A,
+    .contact-me .text .B,
+    .contact-me .text .C,
+    .contact-me .text .D,
+    .contact-me .text .E {
+        font-size: clamp(13px, 3.5vw, 18px);
+        overflow-wrap: anywhere;
+    }
+}

@@ -500,7 +500,13 @@
     </marquee>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 650,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 70,
+        anchorPlacement: "top-bottom",
+      });
     </script>
   </body>
 </html>
